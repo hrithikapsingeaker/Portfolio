@@ -1,0 +1,32 @@
+<!-- Toast Notifications Host -->
+<app-toast></app-toast>
+
+<!-- Top Fixed Navbar -->
+<app-navbar (formSelected)="onFormSelect($event)"></app-navbar>
+
+<!-- Main Portfolio Layout -->
+<main class="main-content">
+  <!-- Hero Section -->
+  <app-hero (formSelected)="onFormSelect($event)"></app-hero>
+
+  <!-- About Section -->
+  <app-about (formSelected)="onFormSelect($event)"></app-about>
+
+  <!-- Technical Skills Section -->
+  <app-skills></app-skills>
+
+  <!-- Commercial Experience Section -->
+  <app-experience></app-experience>
+
+  <!-- Featured Projects Section -->
+  <app-projects (formSelected)="onProjectFormSelect($event)"></app-projects>
+
+  <!-- Multiple Interactive Forms Hub (Central Highlight!) -->
+  <app-forms-hub [initialTab]="selectedFormTab"></app-forms-hub>
+
+  <!-- Resume Viewer & Download -->
+  <app-resume-viewer></app-resume-viewer>
+</main>
+
+<!-- Footer -->
+<app-footer></app-footer>
